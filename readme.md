@@ -16,13 +16,17 @@ This Terraform project provisions an EC2 instance with IAM role and CloudWatch m
    - Associates the IAM instance profile for CloudWatch access.
 ![alttext](https://github.com/AtharvaGitProfile/aws-ec2-cloudwatch-monitoring/blob/2a9d9b6f5b7382ab4f079f879ca2e08720f44c47/instance.png)
 
-3. **CloudWatch Metric Alarm**
+3. **Variable Setup**
+   - Sets up the required variables to be used in the configuration of the resources in the infrastructure.
+![alttext](https://github.com/AtharvaGitProfile/aws-ec2-cloudwatch-monitoring/blob/b1a81a68ed1152250149fe55a774af9e1f712f22/Variables.png)
+
+4. **CloudWatch Metric Alarm**
    - Sets a CPU utilization alarm that triggers when CPU usage exceeds 80%.
    - Alarm sends notifications via SNS.
 ![alttextt](https://github.com/AtharvaGitProfile/aws-ec2-cloudwatch-monitoring/blob/23e0c57941329b07930b41c6cd257c6bdf33bdb5/Alarm.png)
 
 
-4. **SNS Topic and Subscription**
+5. **SNS Topic and Subscription**
    - Creates an SNS topic for alarm notifications.
    - Subscribes an email endpoint to the SNS topic for alerts.
 ![alttext](https://github.com/AtharvaGitProfile/aws-ec2-cloudwatch-monitoring/blob/8d02f2c2a522f4af58b7625cc4b6476389a2bcf6/SNS%20Topic%20Subscription.png)
