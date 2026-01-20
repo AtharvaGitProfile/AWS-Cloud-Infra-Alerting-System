@@ -1,0 +1,11 @@
+# Secrets / keys
+*.pem
+
+# Terraform state (sensitive)
+*.tfstate
+*.tfstate.*
+terraform.tfstate
+terraform.tfstate.backup
+
+# Mac junk
+.DS_Store
