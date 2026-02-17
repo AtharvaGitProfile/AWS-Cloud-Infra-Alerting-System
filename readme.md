@@ -4,6 +4,9 @@
 
 This Terraform project provisions an EC2 instance with IAM role and CloudWatch monitoring, including alarms and SNS notifications for high CPU utilization.
 
+## Architecture Diagram
+![terraformdiagram](https://github.com/AtharvaGitProfile/AWS-EC2-CloudWatch-Monitoring/blob/master/Terraform%20Diagram.png)
+
 ## Resources Created
 
 1. **IAM Role and Instance Profile**
