@@ -1,4 +1,4 @@
-# AWS EC2 CloudWatch Monitoring Project
+# AWS Cloud Infrastructure Alerting System 
 
 ## Overview
 
