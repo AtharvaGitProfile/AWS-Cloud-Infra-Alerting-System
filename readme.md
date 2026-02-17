@@ -2,7 +2,25 @@
 
 ## Overview
 
-This Terraform project provisions an EC2 instance with IAM role and CloudWatch monitoring, including alarms and SNS notifications for high CPU utilization.
+What this project demonstrates
+
+• Infrastructure as Code for repeatable environments
+• secure IAM role usage instead of static credentials
+• metric collection and operational visibility
+• automated alerting pipelines
+• validation through simulated load conditions
+
+More importantly, it reflects an engineering mindset. Systems should communicate their health without requiring manual inspection.
+
+## Why did I do this project? 
+
+Large systems rarely fail all at once. Trouble usually begins with small signals such as a CPU spike, throttling, or a resource bottleneck that goes unnoticed until it compounds into downtime, degraded user experience, and expensive incident response.
+
+At scale, reliability comes from catching those early signals and routing them into automated responses before a human ever has to intervene.
+
+This project reflects that mindset in its simplest form.
+
+It provisions compute infrastructure, applies least privilege access, streams operational metrics, and turns system stress into actionable alerts. The goal is not the alarm itself. The goal is building systems that can explain their own health.
 
 ## Architecture Diagram
 ![terraformdiagram](https://github.com/AtharvaGitProfile/AWS-EC2-CloudWatch-Monitoring/blob/master/Terraform%20Diagram.png)
